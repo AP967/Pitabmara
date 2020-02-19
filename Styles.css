@@ -1,6 +1,7 @@
 html,body{
     width: 100%;
     height: 100%;
+    color:#444;
 }
 .navbar{
     padding: .8rem;
@@ -18,8 +19,12 @@ html,body{
 .carousel-inner .carousel-item{
     width: 100vw;
     height: 90vh;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
 }
 .carousel-caption{
+    text-shadow: 1px 1px 10px black;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -70,15 +75,20 @@ hr.light{
     margin-top: .8rem;
     margin-bottom: 1rem;
 }
-
-.upper{
-    width: 100%;
-    height: 100%;
+hr.dark{
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid #777;
 }
 .upper{
     font-size: 4.5em;
-    padding: 3rem;
+    height: 55%;
+    width: 100%;
 }
-.fa-balance-scale{
-    color: red;
+.litem{
+    color: #444;
+}
+.myMargin{
+    margin: 10vw 0 10vw 0;
 }
