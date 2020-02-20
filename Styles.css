@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Redressed&display=swap');
+
 html,body{
     width: 100%;
     height: 100%;
     color:#444;
+    font-family: "redressed";
 }
 .navbar{
     padding: .8rem;
 }
+.navbar-brand{
+    font-size: 2rem;
+}
 .navbar-nav li{
     padding-right: 20px;
+    font-size: 1.5rem;
 }
 .navlink{
     font-size: 1.1em;
@@ -28,6 +35,9 @@ html,body{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+.carousel-caption h1{
+    font-size: 5rem;
 }
 .text{
     padding: 5vw;
@@ -91,4 +101,29 @@ hr.dark{
 }
 .myMargin{
     margin: 10vw 0 10vw 0;
+}
+.btn-outline-secondary{
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width: 300px) and (max-width:500px){
+    .carousel-inner img{
+        width: 130vw;
+        height: 120vh;
+    }
+    .carousel-caption h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+    .carousel-caption h1{
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 700px){
+    .carousel-inner img{
+        width: 140vw;
+        height: 120vh;
+    }
 }
