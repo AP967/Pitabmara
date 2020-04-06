@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+ <!-- Dependencies -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ <!-- Bootstrap css and js -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
-    <h1>Page not created yet!</h1>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Redressed&display=swap');
+    html,body{
+        font-family: "redressed";
+    }
+    </style>
+    <!-- Navbar -->
+    <nav class="navbar  navbar-expand-md navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Pitambara</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav">
+                        <a href="./Contact.html" class="nav-link disabled active">Contact</a>
+                    </li><li class="nav-item">
+                        <a href="./About.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+  <div class="container">
+    <div class="row justify-content-center p-3">
+       <div class="col-md-5 border h-50 rounded shadow">
+        <form action="#">
+            <div class="form-group mt-3">
+                <label for="nameIn">Name: </label>
+                <input class="form-control" type="text" id="nameIn" required>
+            </div>  
+            <div class="form-group">
+                <label for="emailIn">Email: </label>
+                <input class="form-control" type="email" id="emailIn" required>
+            </div>
+            <div class="form-group">
+                <label for="msgIn">Message: </label>
+                <textarea class="form-control" cols="30" rows="10" id="msgIn" required></textarea>
+                <input class="btn btn-primary mt-3" type="submit" value="Submit">
+            </div>
+        </form>
+       </div>
+    </div>
+  </div>
 </body>
 </html>
